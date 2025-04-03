@@ -31,10 +31,6 @@ if not nvidia_api_key:
     st.info("Please add your nvidia api key to continue")
     st.stop()
 
-## Drop down to select various Open AI models
-
-# os.environ["NVIDIA_API_KEY"] = os.getenv("NVIDIA_API_KEY")
-
 # Initialize NVIDIA LLM with LLaMA3-70B-Instruct model
 llm = ChatNVIDIA(model_name=model, nvidia_api_key=nvidia_api_key)
 
